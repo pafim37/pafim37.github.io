@@ -12,26 +12,48 @@
         <link href="./static/site.css" rel="stylesheet"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        
+        <script type = "text/javascript">
+        var element = 0;
+        function TakeMoto() 
+        {
+            const mot = ["Nauka ma przede wszystkim bawić... <br> jednak ma bawić Ciebie, a nie ludzi, którzy czytają Twoją pracę",
+             "Gdybym był rybką, Astronomia była by wodą - każda rybka potrzebuje wody do życia <br> ~mgr Paweł Piątek"];
+            document.getElementById("tile5").innerHTML = mot[element];
+            setTimeout("doit()", 1000);
+            if(element > 1) element = 0;
+            else element = element + 1;
+        }
+        </script>
     </head>
     
-    <body>
+    <body onload="TakeMoto();">
         <div class = "container">
-            <div class = "name">Paweł Piątek - Polski Astronom Fizyk i Matematyk</div>
+            <div class = "name">Paweł Piątek - Polski Astronom, Fizyk i Matematyk</div>
 
-                <div class = "square">
-                    <div class = "tile1">Astronomia</div>
-                    <div class = "tile2">Programowanie</div>
+                <div class = "square-left">
+                    <a href="astronomy.html">
+                        <div class = "tile1">Astronomia</div>
+                    </a>
+                    <a href="programing.html">
+                        <div class = "tile2">Programowanie</div>
+                    </a>
                     <div style = "clear: both;"></div>
-                    <div class = "tile3">3</div>
-                    <div class = "tile4">4</div>
+                    <a href="religion.html">
+                    <div class = "tile3">Religia</div>
+                    </a>
+                    <a href="37.html">
+                    <div class = "tile4">Tajemnica liczby 37</div>
+                    </a>
                     <div style = "clear: both;"></div>
                 </div>
                 
-                <div class = "square">
-                    <div class="tile5">5</div>
+                <div class = "square-right">
+                    <div id="tile5">Mot</div>
                 </div>
                 <div style="clear:both;"></div>
-            </div>
+                <footer>Paweł Piątek - Polski Astronom, Fizyk i Matematyk &copy 2021</footer>
 
+            </div>
     </body>
 </html>
