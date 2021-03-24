@@ -22,24 +22,40 @@
     
     <body>
         <header>
-            <a href="index.html">pafim37</a>
-            <div class="header-right">
-                <a href="#contact">Kontakt</a>
+            <div id="home">
+                <a href="index.html">pafim37</a>
             </div>
+            <div id="concat">Kontakt</div>
         </header>
         
         <main>
-            <div id="logo">
-                <div id="name">Paweł Piątek</div>
-                <div id="pafim">Polski Astronom, Fizyk i Matematyk</div>
-                <hr style="background-color: white; width: 100%;"/>
-                <div id="intro">
-                    <a href="aboutme.html">
-                        <div id="button">Rozpocznij swoją przygodę <br> i poznaj mnie już dziś!</div>
-                    </a>
+            <div id="content">
+                <div class="flex-container">
+                    <div id="square-left" style = "float: left;">
+                        <div class="flex-container">
+                            <a href="astronomy.html">
+                                <div id = "tile1">Astronomia</div>
+                            </a>
+                            <a href="programing.html">
+                                <div id = "tile2">Programowanie</div>
+                            </a>
+                        </div>
+                        
+                        <div class="flex-container">
+                            <a href="religion.html">
+                                <div id = "tile3">Religia</div>
+                            </a>
+                            <a href="37.html">
+                                <div id = "tile4">Tajemnica liczby 37</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id = "square-right">
+                        <div id="tile5">Mot</div>
+                    </div>
                 </div>
-        </div>
-    </main>
+            </div>
+        </main>
     <footer>Paweł Piątek - Polski Astronom, Fizyk i Matematyk &copy 2021</footer>
     </body>
     </html>
