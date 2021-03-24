@@ -5,55 +5,56 @@
         <title>pafim37</title>
         <meta name="description" content="my website" >
         <meta name="author" content="Paweł Piątek" >
-        <meta name="keywords" content="Moja strona, Pierwsza strona, Motorola Solution, bla bla bla,"  />
+        <meta name="keywords" content="Moja strona, Pierwsza strona, Motorola Solution," />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
-        <link href="./static/site.css" rel="stylesheet"/>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-        
-        <script type = "text/javascript">
-        var element = 0;
-        function TakeMoto() 
-        {
-            const mot = ["Nauka ma przede wszystkim bawić... <br> jednak ma bawić Ciebie, a nie ludzi, którzy czytają Twoją pracę",
-             "Gdybym był rybką, Astronomia była by wodą - każda rybka potrzebuje wody do życia <br> ~mgr Paweł Piątek"];
-            document.getElementById("tile5").innerHTML = mot[element];
-            setTimeout("doit()", 1000);
-            if(element > 1) element = 0;
-            else element = element + 1;
-        }
-        </script>
+
+        <link href="./static/main.css" rel="stylesheet"/>
+        <link href="./static/index.css" rel="stylesheet"/>
+        <link href="./fontello/css/fontello.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
     </head>
     
-    <body onload="TakeMoto();">
-        <div class = "container">
-            <div class = "name">Paweł Piątek - Polski Astronom, Fizyk i Matematyk</div>
-
-                <div class = "square-left">
-                    <a href="astronomy.html">
-                        <div class = "tile1">Astronomia</div>
-                    </a>
-                    <a href="programing.html">
-                        <div class = "tile2">Programowanie</div>
-                    </a>
-                    <div style = "clear: both;"></div>
-                    <a href="religion.html">
-                    <div class = "tile3">Religia</div>
-                    </a>
-                    <a href="37.html">
-                    <div class = "tile4">Tajemnica liczby 37</div>
-                    </a>
-                    <div style = "clear: both;"></div>
-                </div>
-                
-                <div class = "square-right">
-                    <div id="tile5">Mot</div>
-                </div>
-                <div style="clear:both;"></div>
-                <footer>Paweł Piątek - Polski Astronom, Fizyk i Matematyk &copy 2021</footer>
-
+    <body>
+        <header>
+            <a href="index.html">pafim37</a>
+            <div class="header-right">
+                <a href=""><i class="icon-mail"></i></a>
+                <a href="https://github.com/pafim37"><i class="icon-github-circled"></i></a>
+                <a href="https://www.linkedin.com/in/pawe%C5%82-pi%C4%85tek-89b291183/"><i class="icon-linkedin-squared"></i></a>
             </div>
+        </header>
+        
+        <main>
+            <div id="logo">
+                <div id="name">Paweł Piątek</div>
+                <div id="pafim">Polski Astronom, Fizyk i Matematyk</div>
+                <hr style="background-color: white; width: 100%;"/>
+                <div id="intro">
+                    <a href="aboutme.html">
+                        <div id="button">Rozpocznij swoją przygodę <br> i poznaj mnie już dziś!</div>
+                    </a>
+                </div>
+                <!--
+
+                    <div id="representation">
+                        <div id="uj">
+                            <img src="assets/ujlogo.png"/>
+                        </div>
+                        <div id="motorola">
+                            <img src="assets/mlogo.png" style="background-color:rgba(0, 0, 0, 0.5);"/>    
+                        </div>
+                    </div>
+                -->
+        </div>
+    </main>
+        
+        <footer>2021 &copy Paweł Piątek - Polski Astronom, Fizyk i Matematyk <i class="demo-icon icon-mail-alt"></i> astropawelpiatek@gmail.com</footer>
     </body>
-</html>
+    </html>
